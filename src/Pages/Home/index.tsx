@@ -1,5 +1,4 @@
-import yellow from '../../assets/yellow-bg-icons.png'
-import me from "../../assets/me.png";
+
 import ProjectCard from '../../components/Project';
 
 const Home = () => {
