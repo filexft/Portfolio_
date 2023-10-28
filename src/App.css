@@ -4,9 +4,9 @@
     max-width: 100%;
     margin: 0;
     padding: 0;
-    background-color: var(--bg-black-900);
     color: var(--text-black-900);
 }
+
 
 :root {
     --bg-black-900: #f2f2fc;
