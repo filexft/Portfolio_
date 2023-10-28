@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import "./nav.css";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 
 
 const Nav = () => {
@@ -92,7 +90,6 @@ const Nav = () => {
                     Project
                 </Link>
             </div>
-          
         </div>
     );
 };
