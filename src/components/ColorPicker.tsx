@@ -24,7 +24,9 @@ const ColorPicker = () => {
     return (
         <div
             id="theme"
-            className={`flex justify-center items-center gap-4 absolute transition-right ease-in-out duration-500 top-24 ${show?'right-0': 'right-[-15%]'}`}
+            className={`flex justify-center items-center gap-4 absolute transition-translate-x ease-in-out duration-500 top-24 right-0 ${
+                show ? "translate-x-0" : "translate-x-52"
+            } `}
         >
             <div className="flex flex-col gap-5">
                 <FontAwesomeIcon

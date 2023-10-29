@@ -16,6 +16,7 @@ export default {
                 "bcg-black-50": "var(--bg-black-50)",
                 'text-black-900': "var(--text-black-900)",
                 'text-black-700': "var(--text-black-700)",
+                'skin-color' : 'var(--skin-color)'
             },
         },
         fontFamily: {

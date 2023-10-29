@@ -7,8 +7,9 @@ import ThemeProvider from "./utile/SkinContext";
 import Nav from "./components/Nav";
 import Home from "./Pages/Home";
 import Project from "./Pages/Project";
-import Particle from "./components/Particles";
+// import Particle from "./components/Particles";
 import ColorPicker from "./components/ColorPicker";
+import SingleProject from "./Pages/SingleProject";
 
 function App() {
     const { scrollYProgress } = useScroll();
@@ -23,13 +24,14 @@ function App() {
                     className="progress-bar z-50"
                     style={{ scaleX: scrollYProgress }}
                 />
-                <Particle />
+                {/* <Particle /> */}
                 <ColorPicker />
                 <Router>
                     <Nav />
 
-                    <div className="h-full">
+                    <div className="h-full overflow-x-hidden">
                         <Routes>
+                            <Route path="/project/:projectID" element={<SingleProject />} />
                             <Route path="/project" element={<Project />} />
                             <Route path="/" element={<Home />} />
                         </Routes>
