@@ -5,7 +5,7 @@ import "./nav.css";
 
 const Nav = () => {
     return (
-        <div className="flex justify-evenly items-center p-4">
+        <div className="flex bg-bcg-black-100 justify-evenly items-center p-4">
             <Link to="/" className="flex gap-2">
                 <div className="logo-before relative flex justify-center items-center text-[20px] gap-1 font-semibold">
                     <p className="font-rouge text-[40px]  style-switcher color-2">

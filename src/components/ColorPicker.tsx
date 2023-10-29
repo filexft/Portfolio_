@@ -1,11 +1,10 @@
 import { useState, useContext } from "react";
-
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faCog } from "@fortawesome/free-solid-svg-icons";
 import {ThemeContext} from "../utile/SkinContext";
 
 const ColorPicker = () => {
+    
     const { updateTheme } = useContext(ThemeContext);
     const [theme, setTheme] = useState(1);
     const [dark, setDark] = useState(false);
@@ -25,7 +24,7 @@ const ColorPicker = () => {
     return (
         <div
             id="theme"
-            className={`flex justify-center items-center gap-4 absolute transition-right ease-in-out duration-500 top-10 ${show?'right-0': 'right-[-15%]'}`}
+            className={`flex justify-center items-center gap-4 absolute transition-right ease-in-out duration-500 top-24 ${show?'right-0': 'right-[-15%]'}`}
         >
             <div className="flex flex-col gap-5">
                 <FontAwesomeIcon

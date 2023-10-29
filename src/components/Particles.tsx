@@ -26,7 +26,7 @@ const Particle = () => {
 
     return (
         <Particles
-            className="z-[2] "
+            className="z-[2] opacity-40"
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -63,7 +63,7 @@ const Particle = () => {
 
                         distance: 100,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 1,
                         width: 2,
                     },
                     move: {

@@ -1,18 +1,32 @@
-import {createContext, useState } from 'react'
+import {
+    createContext,
+    ReactNode,
+    useState,
+    Dispatch,
+    SetStateAction,
+} from "react";
 
-export const ThemeContext = createContext('');
+type ThemeContextType = {
+    theme: string;
+    updateTheme: Dispatch<SetStateAction<string>>;
+};
 
-const ThemeProvider = ({ children }) => {
-    const [theme, setTheme] = useState("#ec1839");
+export const ThemeContext = createContext<ThemeContextType | undefined>(
+    undefined,
+);
 
-    const updateTheme = (val) => {
+const ThemeProvider = ({ children }: { children: ReactNode }) => {
+    const [theme, setTheme] = useState<string>("#ec1839");
+
+    const updateTheme = (val: string) => {
         setTheme(val);
     };
+
     return (
         <ThemeContext.Provider value={{ theme, updateTheme }}>
             {children}
         </ThemeContext.Provider>
     );
-};  
+};
 
-export default ThemeProvider
+export default ThemeProvider;
