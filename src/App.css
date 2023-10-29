@@ -14,6 +14,10 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
+
+    
+    --skin-color: #ec1839;
+
 }
 body.dark {
     --bg-black-900: #151515;
@@ -37,6 +41,10 @@ body.dark {
 }
 #container.color-5 {
     --skin-color: #f021b2;
+}
+
+svg{
+    color: var(--text-black-700);
 }
 
 .logo {

@@ -3,7 +3,12 @@ import Particles from "react-particles";
 //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
+import {useContext} from 'react'
+import '../App.css'
+import {ThemeContext} from '../utile/SkinContext'
+
 const Particle = () => {
+    const { theme } = useContext(ThemeContext);
     const particlesInit = useCallback(async (engine : any) => {
         console.log(engine);
         // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
@@ -17,9 +22,11 @@ const Particle = () => {
         await console.log(container);
     }, []);
 
+
+
     return (
         <Particles
-            className="z-[-3]"
+            className="z-[2] "
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
@@ -49,10 +56,11 @@ const Particle = () => {
                 },
                 particles: {
                     color: {
-                        value: "#FF5200",
+                        value: theme,
                     },
                     links: {
-                        color: "#77024D",
+                        color: theme,
+
                         distance: 100,
                         enable: true,
                         opacity: 0.5,

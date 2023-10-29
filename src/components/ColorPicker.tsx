@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faCog } from "@fortawesome/free-solid-svg-icons";
+import {ThemeContext} from "../utile/SkinContext";
 
 const ColorPicker = () => {
+    const { updateTheme } = useContext(ThemeContext);
     const [theme, setTheme] = useState(1);
     const [dark, setDark] = useState(false);
     const [show, setShow] = useState(false);
@@ -15,6 +17,7 @@ const ColorPicker = () => {
             ?.classList.remove("color-" + theme);
         setTheme(i + 1);
         document.querySelector("#container")?.classList.add("color-" + (i + 1));
+        updateTheme(color);
         console.log("click at", i, color);
     };
     const colors = ["#ec1839", "#fa5b0f", "#37b182", "#1854b4", "#f021b2"];
