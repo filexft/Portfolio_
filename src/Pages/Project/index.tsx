@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import vite from "/vite.svg";
+import Golden from "/assets/projects/goldenblog.png";
 
 const Project = () => {
     return (
@@ -8,11 +8,11 @@ const Project = () => {
             <div className="flex flex-wrap gap-4 p-2">
                 <a href="/project/goldenblog">
                     <motion.div className="w-[400px] h-[400px] flex flex-col justify-center p-3  bg-bcg-black-50 rounded-md">
-                        <img src={vite} alt="" className="h-3/4" />
-                        <h3>Vite project</h3>
+                        <img src={Golden} alt="" className="h-3/4" />
+                        <h3>GoldenBlog</h3>
                         <div className="flex justify-between mt-4">
                             <h3>Fullstack</h3>
-                            <h3>Css js</h3>
+                            <h3>Html/Css, Php</h3>
                         </div>
                     </motion.div>
                 </a>
