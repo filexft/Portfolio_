@@ -4,8 +4,15 @@ import { faMoon, faSun, faCog } from "@fortawesome/free-solid-svg-icons";
 import {ThemeContext} from "../utile/SkinContext";
 
 const ColorPicker = () => {
-    
-    const { updateTheme } = useContext(ThemeContext);
+    const themeContext = useContext(ThemeContext);
+
+    //checking if themecontext exist cuz it's type is either a dispatcher or undefined
+    if (!themeContext) {
+        throw new Error("ThemeContext is not provided.");
+    }
+
+    const { updateTheme } = themeContext;
+
     const [theme, setTheme] = useState(1);
     const [dark, setDark] = useState(false);
     const [show, setShow] = useState(false);
