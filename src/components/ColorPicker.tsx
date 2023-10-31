@@ -31,7 +31,7 @@ const ColorPicker = () => {
     return (
         <div
             id="theme"
-            className={`flex justify-center items-center gap-4 absolute transition-translate-x ease-in-out duration-500 top-24 right-0 ${
+            className={`flex justify-center items-center gap-4 absolute transition-translate-x ease-in-out duration-500 top-28 right-0 ${
                 show ? "translate-x-0" : "translate-x-52"
             } `}
         >

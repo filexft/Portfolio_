@@ -3,6 +3,7 @@ import ProjectCard from '../../components/Project';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import Project from '../Project';
 
 const Home = () => {
     return (
@@ -56,6 +57,7 @@ const Home = () => {
                 <h1>Projects</h1>
                 <ProjectCard />
             </section>
+            <Project />
         </div>
     );
 };
