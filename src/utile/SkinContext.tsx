@@ -18,7 +18,7 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
 const ThemeProvider = ({ children }: { children: ReactNode }) => {
     const [theme, setTheme] = useState<string>("#ec1839");
 
-    const updateTheme = (val: string) => {
+    const updateTheme = (val) => {
         setTheme(val);
     };
 

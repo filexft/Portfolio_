@@ -1,5 +1,4 @@
 import { easeInOut, motion } from "framer-motion";
-import Golden from "/assets/projects/goldenblog.png";
 import {projectList} from '../../utile/constant'
 
 const Project = () => {

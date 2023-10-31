@@ -1,9 +1,9 @@
-
-import ProjectCard from '../../components/Project';
+import ProjectCard from "../../components/Projectcard";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
-import Project from '../Project';
+import Project from "../Project";
+import Footer from "../../components/footer";
 
 const Home = () => {
     return (
@@ -32,6 +32,7 @@ const Home = () => {
                         <FontAwesomeIcon
                             icon={faGlobe}
                             className="text-text-black-700"
+                            flip
                         />
                         Lyon, France
                     </a>
@@ -53,10 +54,7 @@ const Home = () => {
                     about tech, music, or anything else that interests you!
                 </p>
             </section>
-            <section className="h-screen flex flex-col justify-center items-center gap-10 ">
-                <h1>Projects</h1>
-                <ProjectCard />
-            </section>
+            {/* <ProjectCard /> */}
             <Project />
         </div>
     );

@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
 import "./nav.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChildReaching, faWalkieTalkie } from "@fortawesome/free-solid-svg-icons";
+import { faRocketchat } from "@fortawesome/free-brands-svg-icons";
 
 
 
@@ -15,7 +18,7 @@ const Nav = () => {
                 </div>
             </Link>
             <div id="pages" className="flex gap-6">
-                <Link to="/" className="flex gap-2">
+                <Link to="/" className="flex gap-2 justify-center items-center">
                     <div>
                         <svg
                             className="h-5"
@@ -29,7 +32,10 @@ const Nav = () => {
                     </div>
                     Home
                 </Link>
-                <Link to="project" className="flex gap-2">
+                <Link
+                    to="project"
+                    className="flex gap-2 justify-center items-center"
+                >
                     <div className="">
                         <svg
                             className="h-5 "
@@ -89,6 +95,16 @@ const Nav = () => {
                     </div>
                     Project
                 </Link>
+                <a
+                    href="#footer"
+                    className="flex gap-2 justify-center items-center"
+                >
+                    <FontAwesomeIcon
+                        icon={faRocketchat}
+                        className="text-skin-color"
+                    />
+                    Contact
+                </a>
             </div>
         </div>
     );

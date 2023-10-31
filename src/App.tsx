@@ -10,6 +10,7 @@ import Project from "./Pages/Project";
 // import Particle from "./components/Particles";
 import ColorPicker from "./components/ColorPicker";
 import SingleProject from "./Pages/SingleProject";
+import Footer from "./components/footer";
 
 function App() {
     const { scrollYProgress } = useScroll();
@@ -31,12 +32,16 @@ function App() {
 
                     <div className="h-full overflow-x-hidden">
                         <Routes>
-                            <Route path="/project/:projectID" element={<SingleProject />} />
+                            <Route
+                                path="/project/:projectID"
+                                element={<SingleProject />}
+                            />
                             <Route path="/project" element={<Project />} />
                             <Route path="/" element={<Home />} />
                         </Routes>
                     </div>
                 </Router>
+                <Footer />
             </div>
         </ThemeProvider>
     );
