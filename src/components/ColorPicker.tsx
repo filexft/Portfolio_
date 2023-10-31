@@ -3,7 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun, faCog } from "@fortawesome/free-solid-svg-icons";
 import { ThemeContext } from "../utile/SkinContext";
 
-
 // type ThemeType = { dark: boolean; skin: number };
 
 const ColorPicker = () => {
@@ -17,28 +16,25 @@ const ColorPicker = () => {
     const { updateTheme } = themeContext;
 
     // const [theme, setTheme] = useState<ThemeType>();
-    
-    
-    const storedTheme = JSON.parse(localStorage.getItem("theme") || '') || null 
-    
+
+    const storedTheme = JSON.parse(localStorage.getItem("theme") || "") || null;
+
     const [skin, setSkin] = useState(storedTheme?.skin || 1);
     const [dark, setDark] = useState(storedTheme?.dark || false);
     const [show, setShow] = useState(false);
-    
+
     console.log(dark, skin);
     useEffect(() => {
-        localStorage.setItem('theme', JSON.stringify({dark , skin}));
+        localStorage.setItem("theme", JSON.stringify({ dark, skin }));
         document.querySelector("#container")?.classList.remove("color-" + 1);
         document.querySelector("#container")?.classList.add("color-" + skin);
-        updateTheme(colors[skin-1]);
+        updateTheme(colors[skin - 1]);
 
-        document.querySelector("body")?.classList.add( dark ? "dark": 'light');
-    }, [dark, skin])
+        document.querySelector("body")?.classList.add(dark ? "dark" : "light");
+    }, [dark, skin]);
 
     const handleClick = (i: number, color: string) => {
-        document
-            .querySelector("#container")
-            ?.classList.remove("color-" + skin);
+        document.querySelector("#container")?.classList.remove("color-" + skin);
         setSkin(i + 1);
         document.querySelector("#container")?.classList.add("color-" + (i + 1));
         updateTheme(color);
@@ -73,7 +69,7 @@ const ColorPicker = () => {
                         document
                             .querySelector("body")
                             ?.classList.toggle("dark");
-                        setDark((predark:boolean) => !predark);
+                        setDark((predark: boolean) => !predark);
                     }}
                 >
                     {dark ? (
