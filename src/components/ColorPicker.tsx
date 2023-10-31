@@ -22,7 +22,6 @@ const ColorPicker = () => {
             localStorage.getItem("theme") || '{"dark": false, "skin": 1}',
         ) || null;
 
-
     const [skin, setSkin] = useState(storedTheme?.skin || 1);
     const [dark, setDark] = useState(storedTheme?.dark || false);
     const [show, setShow] = useState(false);
@@ -34,12 +33,6 @@ const ColorPicker = () => {
         updateTheme(colors[skin - 1]);
 
         document.querySelector("body")?.classList.add(dark ? "dark" : "light");
-
-        console.log(
-            JSON.parse(
-                localStorage.getItem("theme") || "{'dark' : false, 'skin' : 1}",
-            ),
-        );
     }, [dark, skin]);
 
     const handleClick = (i: number, color: string) => {
@@ -47,10 +40,16 @@ const ColorPicker = () => {
         setSkin(i + 1);
         document.querySelector("#container")?.classList.add("color-" + (i + 1));
         updateTheme(color);
-        console.log("click at", i, color);
     };
 
-    const colors = ["#ec1839", "#fa5b0f", "#37b182", "#1854b4", "#f021b2"];
+    const colors = [
+        "#ec1839",
+        "#fa5b0f",
+        "#37b182",
+        "#1854b4",
+        "#f021b2",
+        "#FFB000",
+    ];
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
@@ -96,7 +95,7 @@ const ColorPicker = () => {
             </div>
             <div className="text-center w-[200px] flex flex-col p-3 gap-3 bg-bcg-black-100 rounded-md">
                 <h3 className="font-semibold">Theme Color</h3>
-                <ul className="flex gap-3">
+                <ul className="flex gap-2">
                     {colors.map((color, i) => (
                         <li
                             key={i}

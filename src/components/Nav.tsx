@@ -8,8 +8,8 @@ import { faRocketchat } from "@fortawesome/free-brands-svg-icons";
 const Nav = () => {
     return (
         <div className="flex bg-bcg-black-100 justify-evenly items-center p-4">
-            <Link to="/" className="flex gap-2">
-                <div className="logo-before relative flex justify-center items-center text-[20px] gap-1 font-semibold">
+            <Link to="/" className="flex gap-2 ">
+                <div className="logo-before relative flex justify-center items-center text-[20px] gap-1 font-semibold sm:hidden">
                     <p className="font-rouge text-[40px]  style-switcher color-2">
                         f
                     </p>
@@ -96,7 +96,7 @@ const Nav = () => {
                 </Link>
                 <a
                     href="#footer"
-                    className="flex gap-2 justify-center items-center"
+                    className="flex gap-2 justify-center items-center max-[600px]:gap-8"
                 >
                     <FontAwesomeIcon
                         icon={faRocketchat}

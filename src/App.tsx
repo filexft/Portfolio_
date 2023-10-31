@@ -19,7 +19,7 @@ function App() {
         <ThemeProvider>
             <div
                 id="container"
-                className="color-1 h-full w-full  flex flex-col"
+                className="color-1 h-full w-full  flex flex-col justify-center"
             >
                 <motion.div
                     className="progress-bar z-50"

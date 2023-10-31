@@ -42,6 +42,9 @@ body.dark {
 #container.color-5 {
     --skin-color: #f021b2;
 }
+#container.color-6 {
+    --skin-color: #FFB000;
+}
 
 svg{
     color: var(--text-black-700);

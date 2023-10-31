@@ -6,7 +6,7 @@ import Project from "../Project";
 
 const Home = () => {
     return (
-        <div className="min-h-[100vh] bg-bg-black-50">
+        <div className="min-h-[100vh] bg-bg-black-50 sm:p-2 gap-4">
             <section
                 id="hero"
                 className="h-screen  flex  sm:flex-col md:flex-row justify-evenly items-center gap-10 p-"
@@ -15,7 +15,7 @@ const Home = () => {
                     id="title"
                     className="w-1/2 max-w-md  self-center sm:w-full"
                 >
-                    <h1 className="font-bold text-text-black-900 text-6xl mb-3 sm:text-2xl w-full">
+                    <h1 className="font-bold text-text-black-900 text-6xl mb-3 sm:text-2xl w-full max-[600px]:text-3xl">
                         Felmon Tewelde
                     </h1>
                     <p className="font-semibold text-xl mb-3 sm:text-lg">
@@ -42,7 +42,7 @@ const Home = () => {
                     {/* <img src={me} alt="" className="absolute top-0 left-0" /> */}
                 </div>
             </section>
-            <section className="h-screen flex justify-center items-center gap-10  md:p-4 md:flex-row sm:flex-col w-full p-0 space-x-0">
+            <section className="h-screen flex justify-center items-center gap-10  md:p-4 md:flex-row sm:flex-col w-full p-0 space-x-0 sm:mb-4">
                 <h1 className="font-bold text-3xl ">About</h1>
                 <p className="w-2/3 md:w1/2 h-max text-2xl   border-indigo-500 md:border-l-4 md:border-t-none pl-4  sm:text-lg sm:border-t-4  pt-4">
                     Hello, I'm Tewelde. I'm a dedicated tech enthusiast with a
