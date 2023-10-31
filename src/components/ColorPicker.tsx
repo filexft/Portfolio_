@@ -101,5 +101,4 @@ const ColorPicker = () => {
         </div>
     );
 };
-
 export default ColorPicker;
