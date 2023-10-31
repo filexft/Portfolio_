@@ -19,16 +19,16 @@ const SingleProject = () => {
                     {projectObject?.title} :
                 </h1>
                 <div className="flex justify-evenly gap-2 flex-wrap  ">
-                    <div className="min-w-[30%] w-50% max-w-[50%] md:max-w-[40%]">
+                    <div className="min-w-[30%] w-50%  md:max-w-[40%] sm:w-[100%]">
                         <h3 className="font-semibold text-xl ">Overview</h3>
                         {projectObject?.single?.overview}
                     </div>
-                    <div className="max-w-[30%]">
+                    <div className="max-w-[30%] ">
                         <h3 className="font-semibold text-xl ">
                             Key Features:
                         </h3>
 
-                        <ul className="flex flex-col gap-3 p-2">
+                        <ul className="flex flex-col gap-3 p-2 sm:flex-row sm:gap-2 justify-center items-center">
                             {projectObject?.single?.feature.map((item, idx) => (
                                 <li key={idx} className="font-semibold">
                                     {item}
@@ -37,7 +37,7 @@ const SingleProject = () => {
                         </ul>
                     </div>
 
-                    <div className="flex flex-col gap-4 min-w-[30%]">
+                    <div className="flex flex-col gap-4 min-w-[30%] sm:flex-row">
                         <div className="w-1/2">
                             <h3 className="font-semibold text-xl ">Role</h3>
                             {projectObject?.single?.role}
