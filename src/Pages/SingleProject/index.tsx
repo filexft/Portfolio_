@@ -28,7 +28,7 @@ const SingleProject = () => {
                             Key Features:
                         </h3>
 
-                        <ul className="flex flex-col gap-3 p-2 sm:flex-row sm:gap-2 justify-center items-center">
+                        <ul className="flex flex-col gap-3 p-2 sm:flex-row sm:gap-2 sm:justify-center sm:items-center">
                             {projectObject?.single?.feature.map((item, idx) => (
                                 <li key={idx} className="font-semibold">
                                     {item}
