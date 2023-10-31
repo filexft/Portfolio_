@@ -12,7 +12,7 @@ const Project = () => {
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.9 }}
                             transition={{ duration: 0.2, ease: easeInOut }}
-                            className="w-[400px] h-[400px] flex flex-col justify-center p-3  bg-bcg-black-50 rounded-md sm:w-full sm:h-[200px]"
+                            className="w-[400px] h-[400px] flex flex-col justify-center p-3  bg-bcg-black-50 rounded-md sm:w-full sm:h-[400px]"
                         >
                             <img src={item.image} alt="" className="h-3/4" />
                             <h3>{item.title}</h3>
