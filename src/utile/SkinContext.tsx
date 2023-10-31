@@ -18,8 +18,10 @@ export const ThemeContext = createContext<ThemeContextType | undefined>(
 const ThemeProvider = ({ children }: { children: ReactNode }) => {
     const [theme, setTheme] = useState<string>("#ec1839");
 
-    const updateTheme = (val) => {
-        setTheme(val);
+    const updateTheme: Dispatch<SetStateAction<string>> = (
+        val: SetStateAction<string>,
+    ) => {
+        setTheme(typeof val === "function" ? val(theme) : val);
     };
 
     return (

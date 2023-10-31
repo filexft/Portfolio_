@@ -19,7 +19,7 @@ const ColorPicker = () => {
     // const [theme, setTheme] = useState<ThemeType>();
     
     
-    const storedTheme = JSON.parse(localStorage.getItem("theme")) || null
+    const storedTheme = JSON.parse(localStorage.getItem("theme") || '') || null 
     
     const [skin, setSkin] = useState(storedTheme?.skin || 1);
     const [dark, setDark] = useState(storedTheme?.dark || false);
@@ -73,7 +73,7 @@ const ColorPicker = () => {
                         document
                             .querySelector("body")
                             ?.classList.toggle("dark");
-                        setDark(predark => !predark);
+                        setDark((predark:boolean) => !predark);
                     }}
                 >
                     {dark ? (

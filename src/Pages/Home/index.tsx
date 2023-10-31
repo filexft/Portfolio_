@@ -31,7 +31,6 @@ const Home = () => {
                         <FontAwesomeIcon
                             icon={faGlobe}
                             className="text-text-black-700"
-                            flip
                         />
                         Lyon, France
                     </a>
