@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "./nav.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChildReaching, faWalkieTalkie } from "@fortawesome/free-solid-svg-icons";
 import { faRocketchat } from "@fortawesome/free-brands-svg-icons";
 
 
