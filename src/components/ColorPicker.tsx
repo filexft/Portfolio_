@@ -17,13 +17,12 @@ const ColorPicker = () => {
 
     // const [theme, setTheme] = useState<ThemeType>();
 
-    const storedTheme = JSON.parse(localStorage.getItem("theme") || "{dark : false, skin : 1}") || null;
+    const storedTheme = JSON.parse(localStorage.getItem("theme") || "{'dark' : false, 'skin' : 1}") || null;
 
     const [skin, setSkin] = useState(storedTheme?.skin || 1);
     const [dark, setDark] = useState(storedTheme?.dark || false);
     const [show, setShow] = useState(false);
 
-    console.log(dark, skin);
     useEffect(() => {
         localStorage.setItem("theme", JSON.stringify({ dark, skin }));
         document.querySelector("#container")?.classList.remove("color-" + 1);
@@ -31,6 +30,12 @@ const ColorPicker = () => {
         updateTheme(colors[skin - 1]);
 
         document.querySelector("body")?.classList.add(dark ? "dark" : "light");
+
+        console.log(
+            JSON.parse(
+                localStorage.getItem("theme") || "{'dark' : false, 'skin' : 1}",
+            ),
+        );
     }, [dark, skin]);
 
     const handleClick = (i: number, color: string) => {
