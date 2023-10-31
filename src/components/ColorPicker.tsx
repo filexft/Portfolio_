@@ -17,7 +17,11 @@ const ColorPicker = () => {
 
     // const [theme, setTheme] = useState<ThemeType>();
 
-    const storedTheme = JSON.parse(localStorage.getItem("theme") || "{'dark' : false, 'skin' : 1}") || null;
+    const storedTheme =
+        JSON.parse(
+            localStorage.getItem("theme") || '{"dark": false, "skin": 1}',
+        ) || null;
+
 
     const [skin, setSkin] = useState(storedTheme?.skin || 1);
     const [dark, setDark] = useState(storedTheme?.dark || false);
