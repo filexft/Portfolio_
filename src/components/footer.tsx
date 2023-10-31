@@ -2,11 +2,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
-
     return (
-        <section id="footer" className="h-[300px] bg-bcg-black-900 flex flex-col justify-center items-center gap-4">
+        <section
+            id="footer"
+            className="h-[300px] bg-bcg-black-900 flex flex-col justify-center items-center gap-4"
+        >
             <div className="flex flex-col justify-center items-center gap-4">
-                <h1 className="text-4xl font-poppins font-black">Contact Me :</h1>
+                <h1 className="text-4xl font-poppins font-black">
+                    Contact Me :
+                </h1>
                 <div className="flex gap-8 justify-center items-center">
                     <a
                         href="https://www.linkedin.com/in/tewelde-habtay-felmon-871508251/"
@@ -25,9 +29,9 @@ const Footer = () => {
                 </div>
             </div>
             <div></div>
-            <p>Made with 💛. ©️ 2023</p>
+            <p>Made with 💛. ©️ {new Date().getFullYear()}</p>
         </section>
     );
-}
+};
 
-export default Footer
+export default Footer;

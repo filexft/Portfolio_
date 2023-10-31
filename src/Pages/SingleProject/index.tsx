@@ -6,7 +6,6 @@ const SingleProject = () => {
     const projectObject = projectList.find(
         (item) => item.title.toLowerCase() == projectID,
     );
-    console.log(projectObject);
     return (
         <div className="min-h-screen flex flex-col">
             <img
