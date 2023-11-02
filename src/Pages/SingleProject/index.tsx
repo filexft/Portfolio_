@@ -6,6 +6,7 @@ const SingleProject = () => {
     const projectObject = projectList.find(
         (item) => item.title.toLowerCase() == projectID,
     );
+    console.log(projectObject)
     return (
         <div className="min-h-screen flex flex-col">
             <img
@@ -13,7 +14,7 @@ const SingleProject = () => {
                 alt=""
                 className=" max-w-screen self-center"
             />
-            <div className="min-h-[500px]  p-6 mt-10 flex flex-col gap-4">
+            <div className="min-h-[500px]  p-6 mt-10 flex flex-col gap-8">
                 <h1 className="text-3xl text-skin-color font-bold">
                     {projectObject?.title} :
                 </h1>
@@ -47,6 +48,33 @@ const SingleProject = () => {
                             {projectObject?.single?.tech}
                         </div>
                     </div>
+                </div>
+                <div className="flex justify-center items-center gap-4 mt-4 mb-4">
+                    {projectObject?.single.site && (
+                        <a
+                            href={projectObject?.single.site}
+                            className="bg-bcg-black-100 p-2 rounded-full cursor-pointer"
+                        >
+                            Check the Website
+                        </a>
+                    )}
+
+                    <a
+                        href={projectObject?.single.code}
+                        className="bg-bcg-black-100 p-2 rounded-full cursor-pointer"
+                    >
+                        Check Github repo
+                    </a>
+                </div>
+                <div className="flex flex-col justify-center items-center gap-2">
+                    {projectObject?.single.images?.map((pic, idx) => (
+                        <img
+                            key={idx}
+                            src={pic}
+                            alt=""
+                            className="w-full max-w-[900px] rounded-sm"
+                        />
+                    ))}
                 </div>
             </div>
         </div>

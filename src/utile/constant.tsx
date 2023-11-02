@@ -1,5 +1,31 @@
 export const projectList = [
     {
+        href: "movieflex",
+        image: "/assets/projects/moviea.png",
+        title: "MovieFlex",
+        Ptype: "Website",
+        tech: "html/css, Js",
+        single: {
+            overview:
+                "Get ready for an unparalleled cinematic journey with MovieFlex! We invite you to dive into a world of limitless entertainment, \
+                where you have the power to choose what, when, and where you watch. MovieFlex is more than just a website; \
+                it's your go-to platform for enjoying movies and TV shows like never before.",
+            feature: [
+                "User-Friendly Interface",
+                "Q&A Feature Section",
+                "Responsive Website",
+            ],
+            role: "design, development",
+            tech: "Front-end: Html/CSS",
+            site: "https://filexft.github.io/movieflex/",
+            code: "https://github.com/filexft/movieflex",
+            images: [
+                "/assets/projects/movieb.png",
+                "/assets/projects/moviec.png",
+            ],
+        },
+    },
+    {
         href: "goldenblog",
         image: "/assets/projects/goldenblog.png",
         title: "GoldenBlog",
@@ -17,6 +43,38 @@ export const projectList = [
             ],
             role: "design, development",
             tech: "Front-end: HTML, CSS Back-end:Php Database: wamp",
+            site: "",
+            code: "https://github.com/filexft/Blog",
+            images: [
+                "/assets/projects/goldenblogb.png",
+                "/assets/projects/goldenblogc.png",
+            ],
+        },
+    },
+    {
+        href: "shiny-agency",
+        image: "/assets/projects/shinya.png",
+        title: "Shiny-Agency",
+        Ptype: "Frontend",
+        tech: "React",
+        single: {
+            overview:
+                "Welcome to Shiny Agency, your one-stop destination for all things creative. Shiny Agency is not just a freelance website; \
+                it's a platform that brings together the brightest minds in the world of freelancing,\
+                offering a wide array of services to meet your creative needs.",
+            feature: [
+                "Finding the most Talented Freelancers  ",
+                "Finding Affordable Services",
+                "find a Custom Solutions",
+            ],
+            role: "development",
+            tech: "Front-end: React",
+            site: "https://shiny-three.vercel.app/",
+            code: "https://github.com/filexft/Shiny-Agency",
+            images: [
+                "/assets/projects/shinyb.png",
+                "/assets/projects/shinyc.png",
+            ],
         },
     },
     {
@@ -38,46 +96,9 @@ export const projectList = [
             ],
             role: "design, development",
             tech: "Front-end: Swing, CSS Back-end:Java",
-        },
-    },
-    {
-        href: "movieflex",
-        image: "/assets/projects/moviea.png",
-        title: "MovieFlex",
-        Ptype: "Website",
-        tech: "html/css, Js",
-        single: {
-            overview:
-                "Get ready for an unparalleled cinematic journey with MovieFlex! We invite you to dive into a world of limitless entertainment, \
-                where you have the power to choose what, when, and where you watch. MovieFlex is more than just a website; \
-                it's your go-to platform for enjoying movies and TV shows like never before.",
-            feature: [
-                "User-Friendly Interface",
-                "Q&A Feature Section",
-                "Responsive Website",
-            ],
-            role: "design, development",
-            tech: "Front-end: Html/CSS",
-        },
-    },
-    {
-        href: "shiny-agency",
-        image: "/assets/projects/shinya.png",
-        title: "Shiny-Agency",
-        Ptype: "Frontend",
-        tech: "React",
-        single: {
-            overview:
-                "Welcome to Shiny Agency, your one-stop destination for all things creative. Shiny Agency is not just a freelance website; \
-                it's a platform that brings together the brightest minds in the world of freelancing,\
-                offering a wide array of services to meet your creative needs.",
-            feature: [
-                "Finding the most Talented Freelancers  ",
-                "Finding Affordable Services",
-                "find a Custom Solutions",
-            ],
-            role: "development",
-            tech: "Front-end: React",
+            site: "",
+            code: "https://github.com/filexft/Map_S2",
+            images: ["/assets/projects/mapb.png", "/assets/projects/mapc.png"],
         },
     },
     {
@@ -98,6 +119,9 @@ export const projectList = [
             ],
             role: "design, development",
             tech: "Front-end: html/CSS , JavaScript",
+            site: "https://filexft.github.io/weather/",
+            code: "https://github.com/filexft/weather",
+            images: [],
         },
     },
     {
@@ -114,6 +138,12 @@ export const projectList = [
             feature: ["choosing your favorite kebab", "Responsive website"],
             role: "design, development",
             tech: "Front-end: html/CSS",
+            site: "https://filexft.github.io/SAE-WEB/index.html",
+            code: "https://github.com/filexft/SAE-WEB",
+            images: [
+                "/assets/projects/kebabb.png",
+                "/assets/projects/kebabc.png",
+            ],
         },
     },
 ];

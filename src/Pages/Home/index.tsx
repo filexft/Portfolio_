@@ -45,11 +45,11 @@ const Home = () => {
             <section className="h-screen flex justify-center items-center gap-10  md:p-4 md:flex-row sm:flex-col w-full p-0 space-x-0 sm:mb-4">
                 <h1 className="font-bold text-3xl ">About</h1>
                 <p className="w-2/3 md:w1/2 h-max text-2xl   border-indigo-500 md:border-l-4 md:border-t-none pl-4  sm:text-lg sm:border-t-4  pt-4">
-                    Hello, I'm Tewelde. I'm a dedicated tech enthusiast with a
+                    Hello, I'm Felmon. I'm a dedicated tech enthusiast with a
                     strong love for programming. I'm always eager to learn and
                     explore new horizons in the tech world. Besides coding, I
-                    enjoy playing music and swimming. Let's connect and chat
-                    about tech, music, or anything else that interests you!
+                    enjoy reading books, swimming and listening to music. Let's connect and chat
+                    about tech, music, books, or anything else that interests you!
                 </p>
             </section>
             {/* <ProjectCard /> */}
