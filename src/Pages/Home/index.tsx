@@ -3,6 +3,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Project from "../Project";
+import  me from '/Me.png' 
 
 const Home = () => {
     return (
@@ -20,7 +21,7 @@ const Home = () => {
                     </h1>
                     <p className="font-semibold text-xl mb-3 sm:text-lg">
                         A passionate and Determined
-                        <span>Computer Science</span>
+                        <span> Computer Science </span>
                         Student at the University of Lyon 1
                     </p>
                     <a
@@ -37,9 +38,9 @@ const Home = () => {
                 </div>
                 <div
                     id="heroimg"
-                    className="h-1/2 items-center  relative md:w-1/3 sm:w-full"
+                    className="max-h-2/3 h-4/5 flex justify-center items-center  relative md:w-1/3 sm:w-full"
                 >
-                    {/* <img src={me} alt="" className="absolute top-0 left-0" /> */}
+                    <img src={me} alt="" className="logo-before  logo-after max-h-full absolute  top-0 left-0 rounded-lg " />
                 </div>
             </section>
             <section className="h-screen flex justify-center items-center gap-10  md:p-4 md:flex-row sm:flex-col w-full p-0 space-x-0 sm:mb-4">
