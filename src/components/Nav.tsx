@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./nav.css";
+import {  Flag, PocketKnife, Send } from "lucide-react";
 
 
 const Nav = () => {
