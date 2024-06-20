@@ -192,7 +192,7 @@ const Icons = {
 
 interface IconProps {
   category: string;
-  name: React.ComponentType<any>;
+  name: string;
   // If you have other props, you can specify them here
   [key: string]: SVGIconProps;
 }
