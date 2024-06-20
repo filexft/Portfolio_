@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 import Project from "../Project";
 import  me from '/Me.png' 
+import { BorderBeam } from "../../components/magicui/border-beam";
 
 const Home = () => {
     return (
@@ -38,9 +39,13 @@ const Home = () => {
                 </div>
                 <div
                     id="heroimg"
-                    className="max-h-2/3 h-4/5 flex justify-center items-center  relative md:w-1/3 sm:w-full"
+                    className="max-h-1/4 h-4/5 flex w-fit justify-center items-center  relative md:w-1/3 sm:w-full rounded-xl"
                 >
-                    <img src={me} alt="" className="logo-before  logo-after max-h-full absolute  top-0 left-0 rounded-lg " />
+                    <img src={me} alt="" 
+                     className="logo-before logo-after max-h-full absolute top-0 left-0 rounded-lg w-full h-full object-cover" 
+                    /> 
+                     <BorderBeam size={250} duration={12} delay={9} />
+                    
                 </div>
             </section>
             <section className="h-screen flex justify-center items-center gap-10  md:p-4 md:flex-row sm:flex-col w-full p-0 space-x-0 sm:mb-4">

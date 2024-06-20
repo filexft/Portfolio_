@@ -60,11 +60,11 @@ const ColorPicker = () => {
     return (
         <div
             id="theme"
-            className={`flex justify-center items-center gap-4 fixed transition-translate-x ease-in-out duration-500 top-28 right-0 ${
+            className={`z-50 flex justify-center items-center gap-4 fixed transition-translate-x ease-in-out duration-500 top-28 right-0 ${
                 show ? "translate-x-0 open" : "translate-x-52"
             } `}
         >
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 ">
                 <FontAwesomeIcon
                     icon={faCog}
                     spin
