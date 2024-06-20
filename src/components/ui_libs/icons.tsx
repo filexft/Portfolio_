@@ -196,10 +196,10 @@ const Icons = {
 };
 
 interface IconProps {
-  category: string  ;
-  name: string;
+  category: string | unknown  ;
+  name: string  | unknown;
 //   // If you have other props, you can specify them here
-//   [key: string | number]: SVGIconProps;
+  [key: string]: SVGIconProps | number |unknown;
 }
 
 const Icon : React.FC<IconProps> = ({ category , name, ...props }) => {
