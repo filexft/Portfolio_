@@ -1,8 +1,13 @@
 
 import React from 'react';
 
-// Define the type for the props
-type SVGIconProps = React.SVGProps<SVGSVGElement>;
+interface SVGIconProps extends React.SVGProps<SVGSVGElement> {
+  // Add additional props like width, fill, etc.
+  width?: number | string;
+  height?: number | string;
+  fill?: string;
+  // Add more specific props if needed
+}
 
 
 const Icons = {
@@ -191,10 +196,10 @@ const Icons = {
 };
 
 interface IconProps {
-  category: string;
+  category: string | any  ;
   name: string;
   // If you have other props, you can specify them here
-  [key: string]: SVGIconProps;
+  [key: string | number]: SVGIconProps;
 }
 
 const Icon : React.FC<IconProps> = ({ category , name, ...props }) => {
