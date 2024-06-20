@@ -196,14 +196,14 @@ const Icons = {
 };
 
 interface IconProps {
-  category: string | any  ;
+  category: string  ;
   name: string;
-  // If you have other props, you can specify them here
-  [key: string | number]: SVGIconProps;
+//   // If you have other props, you can specify them here
+//   [key: string | number]: SVGIconProps;
 }
 
 const Icon : React.FC<IconProps> = ({ category , name, ...props }) => {
-  const iconFunction = Icons[category][name];
+  const iconFunction : React.ReactSVG<SVGAElement> = Icons[category][name];
 
   if (!iconFunction) {
     return null; // Handle missing icons gracefully (optional)
