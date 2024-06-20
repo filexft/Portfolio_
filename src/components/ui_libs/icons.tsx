@@ -203,7 +203,7 @@ interface IconProps {
 }
 
 const Icon : React.FC<IconProps> = ({ category , name, ...props }) => {
-  const iconFunction : React.ReactSVG<SVGAElement> = Icons[category][name];
+  const iconFunction = Icons[category][name];
 
   if (!iconFunction) {
     return null; // Handle missing icons gracefully (optional)
