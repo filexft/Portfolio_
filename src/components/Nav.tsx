@@ -1,8 +1,5 @@
 import { Link } from "react-router-dom";
 import "./nav.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocketchat, f } from "@fortawesome/free-brands-svg-icons";
-import { Contact, Contact2, ContactIcon, Flag, PocketKnife, Send } from "lucide-react";
 
 
 const Nav = () => {
