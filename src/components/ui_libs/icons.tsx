@@ -10,6 +10,7 @@ interface SVGIconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 
+
 const Icons = {
   langage : {
     python: (props:SVGIconProps) => (
@@ -199,11 +200,11 @@ interface IconProps {
   category: string  ;
   name: string  | unknown;
 //   // If you have other props, you can specify them here
-  [key: string]: SVGIconProps | number |unknown;
+//   [key: string]: SVGIconProps | number |unknown;
 }
 
-const Icon : React.FC<IconProps> = ({ category , name, ...props }) => {
-  const iconFunction: React.ComponentElement = Icons[category][name];
+const Icon : React.FC<IconProps & SVGIconProps> = ({ category , name, ...props }) => {
+  const iconFunction: any = Icons[category][name];
 
   if (!iconFunction) {
     return null; // Handle missing icons gracefully (optional)
