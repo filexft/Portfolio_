@@ -83,9 +83,7 @@ export function CarouselDApiDemo() {
 
     console.log("images", images)
 
-if (images.length === 0) {
-  images = null;
-}
+
 // let movieflix = projectList.filter(item => item.href == "movieflex") || null
 
   return (
