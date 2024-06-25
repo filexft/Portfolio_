@@ -26,19 +26,19 @@ export function TabsDemo() {
   return (
     <Tabs defaultValue="langage" className="flex flex-col w-full min-h-[300px]">
       <TabsList  className="flex items-center">
-        <TabsTrigger value="langage">Programming Languages</TabsTrigger>
-        <TabsTrigger value="Framework">Frameworks and Libraries</TabsTrigger>
-         <TabsTrigger value="db">Databases</TabsTrigger>
-        <TabsTrigger value="tools">Tools and Technologies</TabsTrigger>
+        <TabsTrigger value="langage">Langages de programmation</TabsTrigger>
+        <TabsTrigger value="Framework">Frameworks et bibliothèques</TabsTrigger>
+         <TabsTrigger value="db">Bases de données</TabsTrigger>
+        <TabsTrigger value="tools">Outils et technologies</TabsTrigger>
       </TabsList>
       <TabsContent value="langage" className="">
         <Card>
           <CardHeader>
-            <CardTitle>Mastery in Programming Languages</CardTitle>
+            <CardTitle>Maîtrise des langages de programmation</CardTitle>
             <CardDescription>
-             Explore my expertise in a variety of programming languages. 
-             From JavaScript to Python, and Java, I have honed my skills to develop efficient, 
-             clean, and scalable code for diverse applications. 
+Explorez mon expertise dans une variété de langages de programmation.
+ De JavaScript à Python et Java, j'ai perfectionné mes compétences pour développer des applications efficaces,
+ code propre et évolutif pour diverses applications.
             </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 w-full min-h-[150px]">
@@ -62,12 +62,11 @@ export function TabsDemo() {
       <TabsContent value="Framework">
         <Card>
           <CardHeader>
-            <CardTitle>Expertise in Frameworks and Libraries</CardTitle>
+            <CardTitle>Expertise en frameworks et bibliothèques</CardTitle>
             <CardDescription>
-            Discover my proficiency with a wide range of frameworks and libraries. 
-            Whether it's building dynamic web applications with React and Vue, or developing backend services with Node.js and Django, 
-            I leverage the power of these tools to create high-performing and user-friendly applications.
-            </CardDescription>
+            Découvrez ma maîtrise d'un large éventail de frameworks et de bibliothèques.
+ Qu'il s'agisse de créer des applications Web dynamiques avec React et Vue, ou de développer des services backend avec Node.js et Django,
+ J'exploite la puissance de ces outils pour créer des applications performantes et conviviales.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 w-full min-h-[150px]">
             <div className="space-y-1 flex flex-wrap  justify-evenly items-center gap-2 max-w-full">
@@ -87,12 +86,11 @@ export function TabsDemo() {
        <TabsContent value="db">
         <Card>
           <CardHeader>
-            <CardTitle>Proficient in Database Management</CardTitle>
+            <CardTitle>Maîtrise de la gestion de bases de données</CardTitle>
             <CardDescription>
-              Delve into my experience with various database technologies. 
-              From relational databases like MySQL and PostgreSQL to NoSQL databases like MongoDB, 
-              I am adept at designing, implementing, and managing databases that ensure data integrity, security, and performance.
-            </CardDescription>
+              Plongez dans mon expérience avec diverses technologies de bases de données.
+ Des bases de données relationnelles comme MySQL et PostgreSQL aux bases de données NoSQL comme MongoDB,
+ Je suis apte à concevoir, mettre en œuvre et gérer des bases de données qui garantissent l'intégrité, la sécurité et les performances des données.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 w-full min-h-[150px]">
             <div className="space-y-1 flex flex-wrap  justify-evenly items-center gap-2 max-w-full">
@@ -112,12 +110,11 @@ export function TabsDemo() {
       <TabsContent value="tools">
         <Card>
           <CardHeader>
-            <CardTitle>Versatility with Development Tools</CardTitle>
+            <CardTitle>Polyvalence avec les outils de développement</CardTitle>
             <CardDescription>
-             Explore the array of tools and technologies I utilize to streamline and enhance the development process. 
-             From version control systems like Git to containerization with Docker, 
-             I am well-versed in using modern tools to improve efficiency and collaboration in development projects.
-            </CardDescription>
+            Explorez la gamme d'outils et de technologies que j'utilise pour rationaliser et améliorer le processus de développement.
+ Des systèmes de contrôle de version comme Git à la conteneurisation avec Docker,
+ Je maîtrise parfaitement l'utilisation d'outils modernes pour améliorer l'efficacité et la collaboration dans les projets de développement.</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 w-full min-h-[150px]">
              <div className="space-y-1 flex flex-wrap  justify-evenly items-center gap-2 max-w-full">

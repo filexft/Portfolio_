@@ -21,9 +21,7 @@ const Home = () => {
                         Felmon Tewelde
                     </h1>
                     <p className="font-semibold text-xl mb-3 sm:text-lg">
-                        A passionate and Determined
-                        <span> Computer Science </span>
-                        Student at the University of Lyon 1
+                        Etudiant passionné et déterminé en Informatique à l'Université Lyon 1
                     </p>
                     <a
                         href="https://www.google.com/maps/place/Lyon/@45.7579211,4.7527295,12z/data=!3m1!4b1!4m6!3m5!1s0x47f4ea516ae88797:0x408ab2ae4bb21f0!8m2!3d45.764043!4d4.835659!16zL20vMGRwcmc?entry=ttu"
@@ -51,11 +49,11 @@ const Home = () => {
             <section className="h-screen flex justify-center items-center gap-10  md:p-4 md:flex-row sm:flex-col w-full p-0 space-x-0 sm:mb-4">
                 <h1 className="font-bold text-3xl ">About</h1>
                 <p className="w-2/3 md:w1/2 h-max text-2xl   border-indigo-500 md:border-l-4 md:border-t-none pl-4  sm:text-lg sm:border-t-4  pt-4">
-                    Hello, I'm Felmon. I'm a dedicated tech enthusiast with a
-                    strong love for programming. I'm always eager to learn and
-                    explore new horizons in the tech world. Besides coding, I
-                    enjoy reading books, swimming and listening to music. Let's connect and chat
-                    about tech, music, books, or anything else that interests you!
+                   Bonjour, je m'appelle Felmon. Je suis un passionné de technologie avec un
+ un fort amour pour la programmation. J'ai toujours envie d'apprendre et
+ explorez de nouveaux horizons dans le monde de la technologie. En plus du codage, je
+ aimez lire des livres, nager et écouter de la musique. Connectons-nous et discutons
+ sur la technologie, la musique, les livres ou tout ce qui vous intéresse !
                 </p>
             </section>
             {/* <ProjectCard /> */}
