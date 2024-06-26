@@ -43,10 +43,10 @@ export function CarouselDApiDemo() {
     },
     {
       title : "Optimisation des applications informatiques",
-      level: 75,
+      level: 85,
       descrip : "Améliorer les performances et l'efficacité des applications en analysant et en optimisant les algorithmes et les structures de données utilisés.",
       projectList:  ["map", "goldenblog"],
-      personalEval: "Bon: Identifier les goulots d'étranglement potentiels et proposer des solutions pour les résoudre."
+      personalEval: "Très bien: Identifier les goulots d'étranglement potentiels et proposer des solutions pour les résoudre."
     },
     {
       title : "Administration des systèmes informatiques communicants complexes",
