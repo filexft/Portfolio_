@@ -102,8 +102,10 @@ export function CarouselDApiDemo() {
                 <CardContent className="flex flex-col justify-evenly  items-center  p-6 gap-4 ">
                     
                     <h2 className="text-2xl font-bold">Competence {index + 1}<br></br>{item.title}</h2>
-
-                    <Progress className="h-[10px] w-[200px]"  value={item.level || 50} />
+                    <div className="flex justify-center items-center gap-5">
+                      <span>Maîtrise  </span>
+                      <Progress className="h-[10px] w-[200px]"  value={item.level || 50} />
+                    </div>
                     <p className="w-[400px] text-center text-[#555]">{item.descrip}</p>
                     <div className="flex gap-2 justify-center">
                       {
