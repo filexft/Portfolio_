@@ -50,25 +50,28 @@ export function CarouselDApiDemo() {
     },
     {
       title : "Administration des systèmes informatiques communicants complexes",
-      level: 50,
+      level: 60,
       descrip : " Gérer et sécuriser les systèmes informatiques et les réseaux, en assurant leur fonctionnement optimal et en respectant les contraintes de performance et de coût.",
       projectList:  ["goldenblog"],
       personalEval: "Bon: Installer et configurer correctement les systèmes d'exploitation et les outils nécessaires."
     },
     {
       title : "Gestion des données et de l’information",
+      level: 70,
       descrip : " Concevoir et maintenir des bases de données relationnelles, tout en assurant la sécurité et la confidentialité des données, et en organisant leur restitution efficace.",
       projectList:  ["map", "goldenblog"],
       personalEval: "Très bien: Concevoir des modèles de données optimisés et évolutifs, permettant une manipulation et une analyse efficaces des informations, tout en garantissant leur confidentialité et leur intégrité."
     },
     {
       title : "Conduite de projet",
+      level: 75,
       descrip : "Planifier, organiser et gérer des projets informatiques en coordonnant les tâches et les équipes, en gérant les risques et en assurant la communication efficace.",
       projectList:  ["map"],
       personalEval: "Bon: Élaborer des plannings réalistes et suivre leur avancement de manière rigoureuse."
     },
     {
       title : "Travail en équipe informatique",
+      level: 68,
       descrip : " Collaborer efficacement au sein d'une équipe informatique en communiquant bien, en appliquant des méthodes de développement appropriées et en assurant une veille technologique.",
       projectList:  ["goldenblog"],
       personalEval: "Bon: Communiquer efficacement avec les membres de l'équipe pour assurer une compréhension commune des objectifs et des tâches à réaliser."
