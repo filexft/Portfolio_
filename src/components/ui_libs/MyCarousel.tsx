@@ -57,7 +57,7 @@ export function CarouselDApiDemo() {
     },
     {
       title : "Gestion des données et de l’information",
-      level: 70,
+      level: 80,
       descrip : " Concevoir et maintenir des bases de données relationnelles, tout en assurant la sécurité et la confidentialité des données, et en organisant leur restitution efficace.",
       projectList:  ["map", "goldenblog"],
       personalEval: "Très bien: Concevoir des modèles de données optimisés et évolutifs, permettant une manipulation et une analyse efficaces des informations, tout en garantissant leur confidentialité et leur intégrité."
