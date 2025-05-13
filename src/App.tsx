@@ -1,5 +1,5 @@
 import "./App.css";
-
+import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
 import ThemeProvider from "./utile/SkinContext";
@@ -34,13 +34,15 @@ function App() {
 
                     <div className="h-full overflow-x-hidden">
                         <Routes>
-                            
                             <Route
                                 path="/project/:projectID"
                                 element={<SingleProject />}
                             />
                             <Route path="/project" element={<Project />} />
-                            <Route path="/competance" element={<Competance />} />
+                            <Route
+                                path="/competance"
+                                element={<Competance />}
+                            />
                             <Route path="/" element={<Home />} />
                             <Route path="*" element={<Error />} />
                         </Routes>
@@ -48,6 +50,7 @@ function App() {
                 </Router>
                 <Footer />
             </div>
+            <Analytics />
         </ThemeProvider>
     );
 }
