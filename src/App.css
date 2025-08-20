@@ -7,7 +7,6 @@
     color: var(--text-black-900);
 }
 
-
 :root {
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
@@ -15,9 +14,7 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 
-    
     --skin-color: #ec1839;
-
 }
 body.dark {
     --bg-black-900: #151515;
@@ -43,10 +40,10 @@ body.dark {
     --skin-color: #f021b2;
 }
 #container.color-6 {
-    --skin-color: #FFB000;
+    --skin-color: #ffb000;
 }
 
-svg{
+svg {
     color: var(--text-black-700);
 }
 

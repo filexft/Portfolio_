@@ -1,9 +1,11 @@
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
+import { Element as ScrollElem } from "react-scroll";
 const Footer = () => {
     return (
-        <section
+        <ScrollElem
+            name="contact"
             id="footer"
             className="h-[300px] bg-bcg-black-900 flex flex-col justify-center items-center gap-4"
         >
@@ -13,14 +15,16 @@ const Footer = () => {
                 </h1>
                 <div className="flex gap-8 justify-center items-center">
                     <a
-                        href="https://www.linkedin.com/in/tewelde-habtay-felmon-871508251/"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/tewelde-felmon"
                         className="text-2xl"
                     >
                         <FontAwesomeIcon icon={faLinkedin} className="mr-2" />
                         Linkedin
                     </a>
                     <a
-                        href="https://www.linkedin.com/in/tewelde-habtay-felmon-871508251/"
+                        target="_blank"
+                        href="https://github.com/filexft"
                         className="text-2xl"
                     >
                         <FontAwesomeIcon icon={faGithub} className="mr-2" />
@@ -30,7 +34,7 @@ const Footer = () => {
             </div>
             <div></div>
             <p>Made with 💛. ©️ {new Date().getFullYear()}</p>
-        </section>
+        </ScrollElem>
     );
 };
 

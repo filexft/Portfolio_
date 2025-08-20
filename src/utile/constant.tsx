@@ -1,22 +1,49 @@
+import React from "react";
 export const projectList = [
+    {
+        href: "unifree",
+        image: "/assets/projects/unifree.png",
+        title: "Unifree",
+        Ptype: "FullStack",
+        tech: "React.js, Node.js, PostgreSQL, Tailwind CSS",
+        single: {
+            overview:
+                "Unifree est une plateforme d’e-learning développée dans le cadre d’un projet universitaire à l’IUT Lyon 1. Conçue par une équipe de quatre étudiants, elle vise à proposer un outil simple et accessible permettant aux enseignants de créer des cours et des quiz interactifs, et aux étudiants de suivre leur apprentissage de manière engageante. La plateforme met l’accent sur la facilité d’utilisation, l’accessibilité et l’open source.",
+            feature: [
+                "Création et gestion de cours et quiz",
+                "Interface simple et intuitive",
+                "Gamification pour renforcer l’engagement",
+                "Plateforme responsive et accessible",
+                "Projet open source avec potentiel d’extension",
+            ],
+            role: "Conception, développement front-end et back-end, gestion de base de données",
+            tech: "Front-end : React.js, Tailwind CSS | Back-end : Node.js | Base de données : PostgreSQL",
+            site: "",
+            code: "",
+            images: [
+                "/assets/projects/unifree.png",
+                "/assets/projects/unifreeb.png",
+            ],
+        },
+    },
     {
         href: "movieflex",
         image: "/assets/projects/moviea.png",
         title: "MovieFlex",
-        Ptype: "Website",
+        Ptype: "Site Web",
         tech: "html/css, Js",
         single: {
             overview:
-                "Get ready for an unparalleled cinematic journey with MovieFlex! We invite you to dive into a world of limitless entertainment, \
-                where you have the power to choose what, when, and where you watch. MovieFlex is more than just a website; \
-                it's your go-to platform for enjoying movies and TV shows like never before.",
+                "Préparez-vous à vivre une expérience cinématographique inégalée avec MovieFlex ! Plongez dans un monde de divertissement illimité, \
+                où vous avez le pouvoir de choisir quoi regarder, quand et où. MovieFlex est bien plus qu’un simple site web ; \
+                c’est votre plateforme incontournable pour profiter des films et séries comme jamais auparavant.",
             feature: [
-                "User-Friendly Interface",
-                "Q&A Feature Section",
-                "Responsive Website",
+                "Interface conviviale",
+                "Section Questions & Réponses",
+                "Site web responsive",
             ],
-            role: "design, development",
-            tech: "Front-end: Html/CSS",
+            role: "Conception, développement",
+            tech: "Front-end : Html/CSS",
             site: "https://filexft.github.io/movieflex/",
             code: "https://github.com/filexft/movieflex",
             images: [
@@ -33,16 +60,16 @@ export const projectList = [
         tech: "html/css, php",
         single: {
             overview:
-                "GoldenBlog is a dynamic web application that I designed and developed as part of my University project. \
-            It serves as a user-friendly platform for bloggers and readers to interact, share, and create content. \
-            This project showcases my skills in web development, user interface design, and community-driven applications.",
+                "GoldenBlog est une application web dynamique que j’ai conçue et développée dans le cadre d’un projet universitaire. \
+            Elle sert de plateforme conviviale permettant aux blogueurs et lecteurs d’interagir, partager et créer du contenu. \
+            Ce projet illustre mes compétences en développement web, conception d’interfaces et applications communautaires.",
             feature: [
-                "User Authentication:",
-                "Blog Browsing: ",
-                "Interactive Comments:",
+                "Authentification des utilisateurs",
+                "Navigation des blogs",
+                "Commentaires interactifs",
             ],
-            role: "design, development",
-            tech: "Front-end: HTML, CSS Back-end:Php Database: wamp",
+            role: "Conception, développement",
+            tech: "Front-end : HTML, CSS | Back-end : PHP | Base de données : WAMP",
             site: "",
             code: "https://github.com/filexft/Blog",
             images: [
@@ -59,16 +86,16 @@ export const projectList = [
         tech: "React",
         single: {
             overview:
-                "Welcome to Shiny Agency, your one-stop destination for all things creative. Shiny Agency is not just a freelance website; \
-                it's a platform that brings together the brightest minds in the world of freelancing,\
-                offering a wide array of services to meet your creative needs.",
+                "Bienvenue chez Shiny Agency, votre destination unique pour tout ce qui touche à la créativité. Shiny Agency n’est pas seulement un site de freelance ; \
+                c’est une plateforme qui rassemble les esprits les plus brillants du monde du freelancing, \
+                offrant une large gamme de services pour répondre à vos besoins créatifs.",
             feature: [
-                "Finding the most Talented Freelancers  ",
-                "Finding Affordable Services",
-                "find a Custom Solutions",
+                "Trouver les freelances les plus talentueux",
+                "Accéder à des services abordables",
+                "Obtenir des solutions personnalisées",
             ],
-            role: "development",
-            tech: "Front-end: React",
+            role: "Développement",
+            tech: "Front-end : React",
             site: "https://shiny-three.vercel.app/",
             code: "https://github.com/filexft/Shiny-Agency",
             images: [
@@ -80,22 +107,22 @@ export const projectList = [
     {
         href: "map",
         image: "/assets/projects/mapa.png",
-        title: "map",
-        Ptype: "Software",
+        title: "Map",
+        Ptype: "Logiciel",
         tech: "Java (Swing)",
         single: {
             overview:
-                "Welcome to our Java Map Project, an innovative solution that leverages the power of \
-                the Greedy Dijkstra Algorithm to help you find the nearest health center quickly and reliably. \
-                In an era where access to healthcare is of paramount importance, \
-                our project serves as a vital tool for individuals seeking immediate medical assistance.",
+                "Bienvenue dans notre projet Java Map, une solution innovante qui exploite la puissance de \
+                l’algorithme de Dijkstra glouton pour vous aider à trouver rapidement et efficacement le centre de santé le plus proche. \
+                À une époque où l’accès aux soins est crucial, \
+                notre projet constitue un outil essentiel pour toute personne cherchant une aide médicale immédiate.",
             feature: [
-                "Finding the most reliable way between two Cities ",
-                "loading the Interactive Map",
-                "find a list of closest hospital center",
+                "Trouver l’itinéraire le plus fiable entre deux villes",
+                "Chargement de la carte interactive",
+                "Liste des centres hospitaliers les plus proches",
             ],
-            role: "design, development",
-            tech: "Front-end: Swing, CSS Back-end:Java",
+            role: "Conception, développement",
+            tech: "Front-end : Swing, CSS | Back-end : Java",
             site: "",
             code: "https://github.com/filexft/Map_S2",
             images: ["/assets/projects/mapb.png", "/assets/projects/mapc.png"],
@@ -109,16 +136,16 @@ export const projectList = [
         tech: "html/css, JS",
         single: {
             overview:
-                "WeatherWise is your ultimate companion for staying updated with the latest weather conditions no matter where you are. \
-                This innovative weather app is designed with a user-friendly interface and provides real-time weather information, \
-                forecasts, and much more, powered by the OpenWeather API.",
+                "WeatherWise est votre compagnon idéal pour rester informé des dernières conditions météorologiques, où que vous soyez. \
+                Cette application météo innovante, dotée d’une interface conviviale, fournit des informations en temps réel, \
+                des prévisions et bien plus encore, grâce à l’API OpenWeather.",
             feature: [
-                "Finding the Current Weather",
-                "Hourly Forecast",
-                "Location-Based",
+                "Obtenir la météo actuelle",
+                "Prévisions horaires",
+                "Basée sur la localisation",
             ],
-            role: "design, development",
-            tech: "Front-end: html/CSS , JavaScript",
+            role: "Conception, développement",
+            tech: "Front-end : HTML/CSS, JavaScript",
             site: "https://filexft.github.io/weather/",
             code: "https://github.com/filexft/weather",
             images: [],
@@ -128,16 +155,16 @@ export const projectList = [
         href: "crouskebab",
         image: "/assets/projects/kebaba.png",
         title: "CrousKebab",
-        Ptype: "Website",
+        Ptype: "Site Web",
         tech: "html/css",
         single: {
             overview:
-                "Welcome to CrousKebab, your one-stop destination for ordering the most delicious kebabs online. Whether you're craving a classic shawarma, a mouthwatering doner kebab, or a delightful vegetarian option,\
-                CrousKebab has you covered. We make ordering your favorite kebabs as easy as 1-2-3, \
-                and we're committed to delivering the tastiest kebabs right to your doorstep.",
-            feature: ["choosing your favorite kebab", "Responsive website"],
-            role: "design, development",
-            tech: "Front-end: html/CSS",
+                "Bienvenue sur CrousKebab, votre destination incontournable pour commander les kebabs les plus délicieux en ligne. Que vous ayez envie d’un shawarma classique, d’un döner savoureux ou d’une option végétarienne gourmande, \
+                CrousKebab est là pour vous. Commander vos kebabs préférés est aussi simple que 1-2-3, \
+                et nous nous engageons à vous livrer les plus savoureux directement à votre porte.",
+            feature: ["Choisir votre kebab préféré", "Site web responsive"],
+            role: "Conception, développement",
+            tech: "Front-end : HTML/CSS",
             site: "https://filexft.github.io/SAE-WEB/index.html",
             code: "https://github.com/filexft/SAE-WEB",
             images: [
@@ -145,5 +172,182 @@ export const projectList = [
                 "/assets/projects/kebabc.png",
             ],
         },
+    },
+];
+
+import { DiScrum } from "react-icons/di";
+import {
+    FaAndroid,
+    FaAngular,
+    FaCss3Alt,
+    FaDocker,
+    FaFigma,
+    FaGitAlt,
+    FaGithub,
+    FaGitlab,
+    FaHtml5,
+    FaJava,
+    FaJs,
+    FaLinux,
+    FaNodeJs,
+    FaPhp,
+    FaPython,
+    FaReact,
+    FaVuejs,
+} from "react-icons/fa";
+import { MdOutlineDesignServices } from "react-icons/md";
+import {
+    SiAnsible,
+    SiC,
+    SiExpress,
+    SiFlask,
+    SiGooglecloud,
+    SiKotlin,
+    SiMongodb,
+    SiMysql,
+    SiNeo4J,
+    SiOracle,
+    SiPostgresql,
+    SiPostman,
+    SiPycharm,
+    SiSelenium,
+    SiSimpleanalytics,
+    SiSqlite,
+    SiTerraform,
+    SiTypescript,
+} from "react-icons/si";
+import { VscVscodeInsiders } from "react-icons/vsc";
+
+export const skills: {
+    [key: string]: { name: string; icon: React.ReactNode }[];
+}[] = [
+    {
+        "Front-end": [
+            { name: "HTML", icon: <FaHtml5 color="var(--skin-color)" /> },
+            { name: "CSS", icon: <FaCss3Alt color="var(--skin-color)" /> },
+            { name: "JavaScript", icon: <FaJs color="var(--skin-color)" /> },
+            {
+                name: "TypeScript",
+                icon: <SiTypescript color="var(--skin-color)" />,
+            },
+            { name: "React", icon: <FaReact color="var(--skin-color)" /> },
+            { name: "Angular", icon: <FaAngular color="var(--skin-color)" /> },
+            { name: "Vue.js", icon: <FaVuejs color="var(--skin-color)" /> },
+            {
+                name: "UI / UX",
+                icon: <MdOutlineDesignServices color="var(--skin-color)" />,
+            },
+        ],
+    },
+    {
+        "Back-end & Mobile": [
+            { name: "Python", icon: <FaPython color="var(--skin-color)" /> },
+            { name: "Java", icon: <FaJava color="var(--skin-color)" /> },
+            { name: "Kotlin", icon: <SiKotlin color="var(--skin-color)" /> },
+            { name: "Node.js", icon: <FaNodeJs color="var(--skin-color)" /> },
+            { name: "Express", icon: <SiExpress color="var(--skin-color)" /> },
+            { name: "Flask", icon: <SiFlask color="var(--skin-color)" /> },
+            { name: "PHP", icon: <FaPhp color="var(--skin-color)" /> },
+            { name: "C", icon: <SiC color="var(--skin-color)" /> },
+            { name: "Bash", icon: <FaLinux color="var(--skin-color)" /> },
+        ],
+    },
+    {
+        Databases: [
+            {
+                name: "PostgreSQL",
+                icon: <SiPostgresql color="var(--skin-color)" />,
+            },
+            { name: "MySQL", icon: <SiMysql color="var(--skin-color)" /> },
+            { name: "Oracle", icon: <SiOracle color="var(--skin-color)" /> },
+            {
+                name: "Sqlite",
+                icon: <SiSqlite color="var(--skin-color)" />,
+            },
+            { name: "MongoDB", icon: <SiMongodb color="var(--skin-color)" /> },
+            { name: "Neo4j", icon: <SiNeo4J color="var(--skin-color)" /> },
+        ],
+    },
+
+    {
+        "Cloud & Infrastructure": [
+            { name: "Docker", icon: <FaDocker color="var(--skin-color)" /> },
+            {
+                name: "Terraform",
+                icon: <SiTerraform color="var(--skin-color)" />,
+            },
+            { name: "Ansible", icon: <SiAnsible color="var(--skin-color)" /> },
+            { name: "CI/CD", icon: <FaGitAlt color="var(--skin-color)" /> },
+            // {
+            //     name: "Prometheus",
+            //     icon: <FaDatabase color="var(--skin-color)" />,
+            // },
+            // {
+            //     name: "SonarQube",
+            //     icon: <SiSonarqube color="var(--skin-color)" />,
+            // },
+            // { name: "AWS", icon: <FaAws color="var(--skin-color)" /> },
+            { name: "GCP", icon: <SiGooglecloud color="var(--skin-color)" /> },
+        ],
+    },
+    {
+        Testing: [
+            { name: "Pytest", icon: <FaPython color="var(--skin-color)" /> },
+            // { name: "Jest", icon: <SiJest color="var(--skin-color)" /> },
+            { name: "Unittest", icon: <FaPython color="var(--skin-color)" /> },
+            {
+                name: "Selenium",
+                icon: <SiSelenium color="var(--skin-color)" />,
+            },
+            { name: "Postman", icon: <SiPostman color="var(--skin-color)" /> },
+        ],
+    },
+    // {
+    //     "Cybersecurity & Systems": [
+    //         // { name: "TryHackMe", icon: <FaLinux color="var(--skin-color)" /> },
+    //         {
+    //             name: "Networks",
+    //             icon: <FaDatabase color="var(--skin-color)" />,
+    //         },
+    //         { name: "Linux", icon: <FaLinux color="var(--skin-color)" /> },
+    //         { name: "Windows", icon: <FaWindows color="var(--skin-color)" /> },
+    //         {
+    //             name: "Active Directory",
+    //             icon: <FaWindows color="var(--skin-color)" />,
+    //         },
+    //     ],
+    // },
+    {
+        "Tools & Methodologies": [
+            { name: "Figma", icon: <FaFigma color="var(--skin-color)" /> },
+            {
+                name: "VS Code",
+                icon: <VscVscodeInsiders color="var(--skin-color)" />,
+            },
+            {
+                name: "Android Studio",
+                icon: <FaAndroid color="var(--skin-color)" />,
+            },
+            { name: "Pycharm ", icon: <SiPycharm color="var(--skin-color)" /> },
+            {
+                name: "PowerBI",
+                icon: <SiSimpleanalytics color="var(--skin-color)" />,
+            },
+            { name: "GitHub", icon: <FaGithub color="var(--skin-color)" /> },
+            { name: "GitLab", icon: <FaGitlab color="var(--skin-color)" /> },
+            // {
+            //     name: "Bitbucket",
+            //     icon: <IoLogoBitbucket color="var(--skin-color)" />,
+            // },
+            {
+                name: "Agile (Scrum, Kanban)",
+                icon: <DiScrum color="var(--skin-color)" />,
+            },
+            // { name: "UML", icon: <FaDatabase color="var(--skin-color)" /> },
+            // {
+            //     name: "PowerAMC",
+            //     icon: <FaDatabase color="var(--skin-color)" />,
+            // },
+        ],
     },
 ];

@@ -1,11 +1,20 @@
-import { Link } from "react-router-dom";
+import { Flag, PocketKnife } from "lucide-react";
+import { BsPersonRaisedHand } from "react-icons/bs";
+import { IoIosSchool } from "react-icons/io";
+import { VscReferences } from "react-icons/vsc";
+import { Link, useLocation } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import "./nav.css";
-import {  Flag, PocketKnife, Send } from "lucide-react";
-
-
 const Nav = () => {
+    const location = useLocation();
+
+    let pathname = location.pathname;
     return (
-        <div className="flex bg-bcg-black-100 justify-evenly items-center p-4">
+        <div
+            className="sticky top-0 z-40 flex justify-evenly items-center p-4
+                bg-white/20 backdrop-blur-3xl border border-white/30 rounded-lg"
+        >
+            {" "}
             <Link to="/" className="flex gap-2 ">
                 <div className="logo-before relative flex justify-center items-center text-[20px] gap-1 font-semibold sm:hidden">
                     <p className="font-rouge text-[40px]  style-switcher color-2">
@@ -29,30 +38,64 @@ const Nav = () => {
                     </div>
                     Home
                 </Link>
-                <Link
-                    to="project"
-                    className="flex gap-2 justify-center items-center"
-                >
-                    <Flag  className="text-skin-color"/>
-                       
-                    Project
-                </Link>
+                {pathname === "/competance" ? null : (
+                    <>
+                        <ScrollLink
+                            to="hero"
+                            className="flex gap-2 justify-center items-center"
+                            smooth={true}
+                            duration={500}
+                        >
+                            <BsPersonRaisedHand className="text-skin-color" />À
+                            propos
+                        </ScrollLink>
+                        <ScrollLink
+                            to="etude"
+                            className="flex gap-2 justify-center items-center"
+                            smooth={true}
+                            duration={500}
+                        >
+                            <IoIosSchool className="text-skin-color" />
+                            Mes études
+                        </ScrollLink>
+                        <ScrollLink
+                            to="skills"
+                            className="flex gap-2 justify-center items-center"
+                            smooth={true}
+                            duration={500}
+                        >
+                            <PocketKnife className="text-skin-color" />
+                            Compétences
+                        </ScrollLink>
+                        <ScrollLink
+                            to="projets"
+                            className="flex gap-2 justify-center items-center"
+                            smooth={true}
+                            duration={500}
+                        >
+                            <Flag className="text-skin-color" />
+                            Projets
+                        </ScrollLink>
+                    </>
+                )}
+
                 <Link
                     to={"/competance"}
                     //href=
                     className="flex gap-2 justify-center items-center max-[600px]:gap-8"
                 >
-                   <PocketKnife className="text-skin-color" />
-                    Skill
+                    <VscReferences className="text-skin-color" />
+                    Référentiel
                 </Link>
-                <Link
-                    to={"#footer"}
-                    //href=
-                    className="flex gap-2 justify-center items-center max-[600px]:gap-8"
+                <ScrollLink
+                    to="contact"
+                    className="flex gap-2 justify-center items-center"
+                    smooth={true}
+                    duration={500}
                 >
-                   <Send className="text-skin-color"/>
+                    <Flag className="text-skin-color" />
                     Contact
-                </Link>
+                </ScrollLink>
             </div>
         </div>
     );

@@ -1,18 +1,18 @@
-import "./App.css";
 import { Analytics } from "@vercel/analytics/react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { motion, useScroll } from "framer-motion";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
 import ThemeProvider from "./utile/SkinContext";
 
 import Nav from "./components/Nav";
+import Competance from "./Pages/Competances";
 import Home from "./Pages/Home";
 import Project from "./Pages/Project";
-import Competance from "./Pages/Competances";
 // import Particle from "./components/Particles";
 import ColorPicker from "./components/ColorPicker";
-import SingleProject from "./Pages/SingleProject";
+import ErrorPage from "./components/Error";
 import Footer from "./components/footer";
-import Error from "./components/Error";
+import SingleProject from "./Pages/SingleProject";
 
 function App() {
     const { scrollYProgress } = useScroll();
@@ -32,7 +32,7 @@ function App() {
                 <Router>
                     <Nav />
 
-                    <div className="h-full overflow-x-hidden">
+                    <div className="h-full">
                         <Routes>
                             <Route
                                 path="/project/:projectID"
@@ -44,7 +44,7 @@ function App() {
                                 element={<Competance />}
                             />
                             <Route path="/" element={<Home />} />
-                            <Route path="*" element={<Error />} />
+                            <Route path="*" element={<ErrorPage />} />
                         </Routes>
                     </div>
                 </Router>

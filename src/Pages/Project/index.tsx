@@ -1,10 +1,12 @@
 import { easeInOut, motion } from "framer-motion";
-import {projectList} from '../../utile/constant'
+import { projectList } from "../../utile/constant";
 
 const Project = () => {
     return (
         <div className="min-h-screen p-4 z-30 sm:w-full sm:p-0">
-            <h1 className="text-3xl font-bold sm:text-2xl mb-2">Projects :</h1>
+            <h1 className="text-3xl font-bold sm:text-2xl mb-2 mt-20">
+                Projets :
+            </h1>
             <div className="flex flex-wrap justify-center items-center gap-4 p-2 sm:w-full sm:p-0">
                 {projectList.map((item, idx) => (
                     <a href={`/project/${item.href}`} key={idx}>
