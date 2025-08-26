@@ -6,7 +6,7 @@ const SingleProject = () => {
     const projectObject = projectList.find(
         (item) => item.title.toLowerCase() == projectID,
     );
-    console.log(projectObject)
+    console.log(projectObject);
     return (
         <div className="min-h-screen flex flex-col">
             <img
@@ -59,12 +59,14 @@ const SingleProject = () => {
                         </a>
                     )}
 
-                    <a
-                        href={projectObject?.single.code}
-                        className="bg-bcg-black-100 p-2 rounded-full cursor-pointer"
-                    >
-                        Check Github repo
-                    </a>
+                    {projectObject?.single.code && (
+                        <a
+                            href={projectObject?.single.code}
+                            className="bg-bcg-black-100 p-2 rounded-full cursor-pointer"
+                        >
+                            Check Github repo
+                        </a>
+                    )}
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
                     {projectObject?.single.images?.map((pic, idx) => (

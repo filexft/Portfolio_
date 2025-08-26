@@ -1,11 +1,55 @@
 import React from "react";
 export const projectList = [
     {
+        href: "alternance",
+        image: "/assets/projects/fpr.jpg",
+        title: "Alternance",
+        Ptype: "FullStack",
+        tech: "Flask, React.js, PostgreSQL",
+        single: {
+            overview:
+                "Alternance réalisée durant ma 3ᵉ année de BUT Informatique en tant que développeur full stack. J’ai travaillé sur des projets internes et sur des plugins pour DatoCMS.",
+            feature: [
+                "Création d’un site de documentation full stack",
+                "Développement d’un plugin de suivi des notifications (Notification Logs)",
+                "Développement d’un plugin « Dropdown » pour DatoCMS",
+            ],
+            role: "Conception et développement full stack d’applications internes et de plugins",
+            tech: "Front-end : React.js, Tailwind CSS | Back-end : Python (Flask) | Base de données : PostgreSQL",
+            site: "",
+            code: "",
+            images: [
+                "/assets/projects/fprdoc.png",
+                "/assets/projects/fprlogs.png",
+            ],
+        },
+    },
+    {
+        href: "stage",
+        image: "/assets/projects/fpr.jpg",
+        title: "Stage",
+        Ptype: "FullStack",
+        tech: "Python (Flask), PostgreSQL",
+        single: {
+            overview:
+                "Stage effectué durant ma 2ᵉ année de BUT Informatique en tant que développeur. J’ai contribué au développement d’un logiciel interne avec Python Flask, React et PostgreSQL.",
+            feature: [
+                "Développement d’un microservice de traitement des visuels",
+                "Gestion des prix et des règles de validation des produits",
+            ],
+            role: "Conception et développement de logiciels internes pour optimiser les processus",
+            tech: "Back-end : Python (Flask) | Base de données : PostgreSQL",
+            site: "",
+            code: "",
+            images: [],
+        },
+    },
+    {
         href: "unifree",
         image: "/assets/projects/unifree.png",
         title: "Unifree",
         Ptype: "FullStack",
-        tech: "React.js, Node.js, PostgreSQL, Tailwind CSS",
+        tech: "React.js, Node.js, PostgreSQL",
         single: {
             overview:
                 "Unifree est une plateforme d’e-learning développée dans le cadre d’un projet universitaire à l’IUT Lyon 1. Conçue par une équipe de quatre étudiants, elle vise à proposer un outil simple et accessible permettant aux enseignants de créer des cours et des quiz interactifs, et aux étudiants de suivre leur apprentissage de manière engageante. La plateforme met l’accent sur la facilité d’utilisation, l’accessibilité et l’open source.",

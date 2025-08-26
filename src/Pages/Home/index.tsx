@@ -189,7 +189,6 @@ const Home = () => {
                 className="min-h-screen flex  justify-center items-center gap-10  md:p-4 md:flex-row sm:flex-col w-full p-0 space-x-0 sm:mb-4"
             >
                 <div className="w-full">
-                    {/* <ProjectCard /> */}
                     <Project />
                 </div>
             </ScrollElem>
